@@ -1,7 +1,7 @@
 """
 OpenMDAO Wrapper for PDCYL.
 
-PDCYL is a structural esimation code that was pulled from ACSYNT.
+PDCYL is a structural estimation code that was pulled from ACSYNT.
 """
 
 # pylint: disable-msg=E0611,F0401
@@ -118,8 +118,8 @@ class PdcylComp(ExternalCode):
     nengwing= Int(iotype='in', desc=' Number of engines on wing')
     wfp     = Float(iotype='in', desc='(Engine Weight * NENG) / WGTO')
     clrw1   = Float(iotype='in', desc=' Fractional location of first engine pair.  Input 0 for centerline engine.') 
-    clrw2   = Float(iotype='in', desc=' Fractional location of second engine pair.  measured from body centerline') 
-    clrw3   = Float(iotype='in', desc=' Fractional location of third engine pair.  measured from body centerline') 
+    clrw2   = Float(iotype='in', desc=' Fractional location of second engine pair.  Measured from body centerline.') 
+    clrw3   = Float(iotype='in', desc=' Fractional location of third engine pair.  Measured from body centerline.') 
 
     # Loads
     # --------------------
@@ -141,7 +141,7 @@ class PdcylComp(ExternalCode):
     clrg2   = Float(iotype='in', desc='Length fraction of main landing gear measured as a fraction of total fuselage length') 
     wfgr1   = Float(iotype='in', desc='Weight fraction of nose landing gear')
     wfgr2   = Float(iotype='in', desc='Weight fraction of main landing gear')
-    igear   = Enum([1, 2], iotype='in', desc='1 - Main landing gear located on fuselage,2 - Main landing gear located on wing')
+    igear   = Enum([1, 2], iotype='in', desc='1 - Main landing gear located on fuselage, 2 - Main landing gear located on wing')
     gfrl    = Float(iotype='in', desc='Ratio of force taken by nose landing gear to force taken by main gear at landing')
     clrgw1  = Float(iotype='in', desc='Position of wing gear as a fraction of structural semispan')
     clrgw2  = Float(iotype='in', desc='Position of second pair wing gear as a fraction of structural semispan')
@@ -156,7 +156,7 @@ class PdcylComp(ExternalCode):
     # Factors
     # --------------------
     ischrenk= Int(iotype='in', desc='1 - use Schrenk load distribution on wing,Else - use trapezoidal distribution')
-    icomnd  = Enum([1, 2], iotype='in', desc='1 - print gross shell dimensions envelope,2 - print detailed shell geometry')
+    icomnd  = Enum([1, 2], iotype='in', desc='1 - print gross shell dimensions envelope, 2 - print detailed shell geometry')
     wgno    = Float(iotype='in', desc='Nonoptimal factor for wing (including the secondary structure)')
     slfmb   = Float(iotype='in', desc='Static load factor for bumps')
     wmis    = Float(iotype='in', desc='Volume component of secondary structure')
