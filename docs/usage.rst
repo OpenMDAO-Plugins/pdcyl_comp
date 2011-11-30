@@ -41,4 +41,4 @@ to tell OpenMDAO where to find it as per the following example:
 
 ::
 
-    pdcyl_comp.command = '/home/ktmoore1/work/PDCyl/PDCyl'
+    pdcyl_comp.command = ['/home/ktmoore1/work/PDCyl/PDCyl']
