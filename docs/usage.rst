@@ -5,9 +5,9 @@ Using the PDCyl Openmdao Wrapper
 The PdcylComp component is a file-wrap of PDCyl, an aircraft structural weight
 estimation code. This distribution includes the files you need to run PdcylComp in
 OpenMDAO. It does not include a source or binary distribution of Pdcyl, which
-you are assumed to already have installed in your local environment.
+it is assumed you already have installed in your local environment.
 
-PdcylComp can be imported from pdcyl_comp.py, which should reside in the
+PdcylComp can be imported from ``pdcyl_comp.py``, which should reside in the
 site-packages directory of your activated Python environment once it is
 installed.
 
@@ -36,7 +36,7 @@ into the OpenMDAO component is to use the ``load_model`` method.
 When the PDCylComp is instantiated, the defaults for the variables are all zero, so
 a model must be loaded or the values must be set manually before running.
 
-If your local PDCyl install is not on your system path, you will need
+If your local PDCyl install is not in your system path, you will need
 to tell OpenMDAO where to find it as per the following example:
 
 ::
