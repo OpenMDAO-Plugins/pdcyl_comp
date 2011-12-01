@@ -12,7 +12,7 @@ from pdcyl_comp.pdcyl_comp import PdcylComp
 from openmdao.main.container import dump
 
 
-class FLOPSWrapperTestCase(unittest.TestCase):
+class PdcylCompTestCase(unittest.TestCase):
 
     def setUp(self):
         """this setup function will be called before each test in this class"""
