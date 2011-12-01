@@ -42,5 +42,5 @@ Package Metadata
 
 - **summary:** OpenMDAO component wrapper for PDCYL
 
-- **version:** 0.2
+- **version:** 0.3
 
