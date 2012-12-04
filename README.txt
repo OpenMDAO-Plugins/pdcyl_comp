@@ -5,5 +5,5 @@ outside of NASA.
 
 To view the Sphinx documentation for this distribution, type:
 
-plugin_docs pdcyl_comp
+openmdao docs pdcyl_comp
 

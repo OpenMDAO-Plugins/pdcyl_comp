@@ -18,6 +18,8 @@ Package Metadata
 
     [openmdao.component]
     pdcyl_comp.pdcyl_comp.PdcylComp=pdcyl_comp.pdcyl_comp:PdcylComp
+    [openmdao.container]
+    pdcyl_comp.pdcyl_comp.PdcylComp=pdcyl_comp.pdcyl_comp:PdcylComp
 
 - **home-page:** https://github.com/OpenMDAO-Plugins/pdcyl_comp
 
@@ -42,5 +44,5 @@ Package Metadata
 
 - **summary:** OpenMDAO component wrapper for PDCYL
 
-- **version:** 0.3
+- **version:** 0.4
 
